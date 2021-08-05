@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.TreeMap;
 
 
-
 public class SymptomDriver {
 	
 	public static void main (String[] args) {
@@ -21,5 +20,10 @@ public class SymptomDriver {
 				ISymptomIteration iSymptomIteration = new SymptomIteration();
 				
 				symptomsMap = iSymptomIteration.sortSymptoms(symptoms);
+				
+				//Display the list and write the list in result.out
+				ISymptomWrite iSymptomWrite = new SymptomWrite();
+				
+				iSymptomWrite.writeSymptoms(symptomsMap);
 	}
 }
