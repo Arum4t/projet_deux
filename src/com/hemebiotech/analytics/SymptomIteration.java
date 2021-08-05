@@ -7,16 +7,26 @@ public class SymptomIteration implements ISymptomIteration {
 
 	@Override
 	public TreeMap<String, Integer> sortSymptom(List<String> result) {
-		
+
 		TreeMap<String, Integer> symptomsMap = new TreeMap<>();
-		
+
 		for (String symptoms : result) {
-			//Test if symptoms exist in map
-			
-			
+			// Test if symptoms exist in map
+			if (symptomsMap.containsKey(symptoms)) {
+				int occurence = 0;
+				// get the value for the occurrence of symptoms
+				occurence = symptomsMap.get(symptoms).intValue();
+				// increment
+				occurence = occurence + 1;
+				// put the value in the map
+				symptomsMap.put(symptoms, occurence);
+
+			} else {
+				symptomsMap.put(symptoms, 1);
+			}
+
 		}
-		return null;
+		return symptomsMap;
 	}
 
 }
-
