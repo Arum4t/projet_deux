@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class SymptomIteration implements ISymptomIteration {
 
 	@Override
-	public TreeMap<String, Integer> sortSymptom(List<String> result) {
+	public TreeMap<String, Integer> sortSymptoms(List<String> result) {
 
 		TreeMap<String, Integer> symptomsMap = new TreeMap<>();
 
