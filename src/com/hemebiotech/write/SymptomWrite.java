@@ -6,7 +6,15 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class SymptomWrite implements ISymptomWrite {
-
+	
+	/**
+	 * Read all key and value from TreeMap 
+	 * @see SymptomsIteration
+	 * 
+	 * Get key, get value and write them in a file name result.out
+	 * 
+	 */
+	
 	@Override
 	public void writeSymptoms(TreeMap<String, Integer> symptomsMap) {
 

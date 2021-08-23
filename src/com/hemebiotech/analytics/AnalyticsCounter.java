@@ -12,22 +12,31 @@ import com.hemebiotech.write.SymptomWrite;
 
 public class AnalyticsCounter {
 
+/**
+ * 
+ * Call all methods 
+ * 
+ * Get the list of symptoms
+ * Sort the list 
+ * Display the list
+ * Write the list in result.out
+ *
+ */
+	
 	public static void main(String[] args) {
-		// get the list of symptoms
+
 		List<String> symptoms;
 
 		ISymptomReader iSymptomReader = new ReadSymptomDataFromFile("symptoms.txt");
 
 		symptoms = iSymptomReader.getSymptoms();
 
-		// Sorting the list
 		TreeMap<String, Integer> symptomsMap;
 
 		ISymptomIteration iSymptomIteration = new SymptomIteration();
 
 		symptomsMap = iSymptomIteration.sortSymptoms(symptoms);
 
-		// Display the list and write the list in result.out
 		ISymptomWrite iSymptomWrite = new SymptomWrite();
 
 		iSymptomWrite.writeSymptoms(symptomsMap);
