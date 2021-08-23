@@ -3,7 +3,14 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.TreeMap;
 
-public class SymptomDriver {
+import com.hemebiotech.read.ISymptomReader;
+import com.hemebiotech.read.ReadSymptomDataFromFile;
+import com.hemebiotech.sort.ISymptomIteration;
+import com.hemebiotech.sort.SymptomIteration;
+import com.hemebiotech.write.ISymptomWrite;
+import com.hemebiotech.write.SymptomWrite;
+
+public class AnalyticsCounter {
 
 	public static void main(String[] args) {
 		// get the list of symptoms

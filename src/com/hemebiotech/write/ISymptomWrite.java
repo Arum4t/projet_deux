@@ -1,4 +1,4 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.write;
 
 import java.util.TreeMap;
 
